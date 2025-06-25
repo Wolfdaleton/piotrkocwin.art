@@ -1,0 +1,9 @@
+The folder for photo files is intended to be a directory, and it cannot contain file contents directly. Instead, you can create a placeholder file to indicate that this directory is meant for photo files. Here’s how you can structure it:
+
+/portfolio-website/portfolio-website/src/subsites/project1/README.md
+
+This file will serve as a placeholder to indicate that this directory is for photo files.
+
+Contents of the file:
+
+This directory is intended for photo files related to project1. Please add your images here.
