@@ -1,0 +1,8 @@
+.calendar-365 { max-width: 400px; margin: auto; }
+.calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.calendar-day { padding: 8px; border: 1px solid #ccc; background: #eee; cursor: pointer; }
+.calendar-day.no-image { background: #f5f5f5; color: #bbb; cursor: not-allowed; }
+.calendar-day.has-image { background: #cce5ff; color: #222; }
+.calendar-image-preview { margin-top: 20px; text-align: center; }
+.calendar-image-preview img { max-width: 100%; max-height: 300px; }
