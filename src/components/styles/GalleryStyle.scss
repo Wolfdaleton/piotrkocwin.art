@@ -1,0 +1,11 @@
+.gallery {
+  max-width: 30vw;
+  max-height: 90vh; // 90% of the viewport height
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+.image-gallery-slide img {
+  max-height: 300px; 
+  width: auto;
+  object-fit: contain;
+}
