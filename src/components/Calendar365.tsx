@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getImageDateFromExif } from '../utils/exifLoader';
-import './styles/Calendar365Style.css';
+import './styles/Calendar365Style.scss';
 
 // Helper to get all days in a month
 function getDaysInMonth(year: number, month: number) {

@@ -1,6 +1,6 @@
 import Gallery from './Gallery'
 import React, { useState } from 'react';
-import './styles/MainSiteStyle.css';
+import './styles/MainSiteStyle.scss';
 import { loadSubsites } from '../utils/subsitesLoader';
 import Calendar365 from './Calendar365'
 
