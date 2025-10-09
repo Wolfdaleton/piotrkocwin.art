@@ -6,9 +6,8 @@ export async function getImageDateFromExif(imageUrl: string): Promise<string | n
   try {
     const exif = await exifr.parse(blob, ['DateTimeOriginal']);
     if (exif && exif.DateTimeOriginal) {
-      // exif.DateTimeOriginal is a Date object
+    
       const date = exif.DateTimeOriginal;
-      // Format as YYYY-MM-DD
       return date.toISOString().slice(0, 10);
     }
     return null;
