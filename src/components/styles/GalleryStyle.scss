@@ -9,3 +9,38 @@
   width: auto;
   object-fit: contain;
 }
+
+.pdf-spread {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.pdf-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.08);
+  padding: 1.5rem;
+}
+
+.pdf-gallery .react-pdf__Page {
+  box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.08);
+  margin-bottom: 1rem;
+}
+
+.pdf-controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pdf-controls button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
