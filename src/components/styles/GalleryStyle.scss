@@ -1,27 +1,33 @@
 .gallery {
-  max-width: 30vw;
-  max-height: 80vh;
-  margin: 2rem 2rem 2rem 2rem;
+  max-width: 20vw;
+  max-height: 70vh;
+  margin: 2rem auto;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .image-gallery-slide img {
-  max-height: 300px; 
+  max-height: 450px; 
   width: auto;
-  object-fit: contain;
+
 }
 
 .pdf-spread {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
   margin-bottom: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
 }
+
 .pdf-gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
-  max-width: 1200px;
+  margin: 2rem auto;
+  max-width: 100%;
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.08);
@@ -31,6 +37,10 @@
 .pdf-gallery .react-pdf__Page {
   box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.08);
   margin-bottom: 1rem;
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
 }
 
 .pdf-controls {

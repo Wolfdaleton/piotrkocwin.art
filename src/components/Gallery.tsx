@@ -15,7 +15,6 @@ interface GalleryProps {
   pdfs?: string[];
 }
 
-// ...existing code...
 
 const Gallery: React.FC<GalleryProps> = ({ images, pdfs }) => {
   const [numPages, setNumPages] = useState<number>();

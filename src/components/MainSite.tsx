@@ -31,7 +31,14 @@ const MainSite = () => {
         ) : (
           <>
             <h2>{allSites[activeIndex]?.name}</h2>
-            <p>{'description' in allSites[activeIndex] ? allSites[activeIndex].description.join(' ') : ''}</p>
+{'description' in allSites[activeIndex] && (
+  <div
+    className="subsite-description"
+    dangerouslySetInnerHTML={{
+      __html: allSites[activeIndex].description.join('\n'),
+    }}
+  />
+)}
             {'images' in allSites[activeIndex] && (
 <Gallery images={allSites[activeIndex]?.images} pdfs={allSites[activeIndex]?.pdfs} />
             )}

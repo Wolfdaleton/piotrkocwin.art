@@ -1,26 +1,63 @@
 .about-me {
   max-width: 700px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.08);
+  padding: 2rem 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .about-me h1 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   color: #222;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.about-me h2 {
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 0.5rem;
 }
 
 .about-me p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #444;
+  text-align: left;
 }
 
-.contact h2 {
-  margin-top: 2rem;
-  font-size: 1.3rem;
-  color: #444;
+.bio {
+  padding-bottom: 1rem;
+}
+
+.statement {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.contact {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.contact a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+  transition: color 0.2s ease;
+}
+
+.contact a:hover {
+  color: #666;
+  border-bottom-color: #666;
 }

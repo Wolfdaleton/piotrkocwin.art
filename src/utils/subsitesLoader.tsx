@@ -3,8 +3,11 @@ export function loadSubsites() {
   const pdfFiles = import.meta.glob('../subsites/*/*.pdf', { eager: true, as: 'url' });
   const textFile = import.meta.glob('../subsites/*/*.txt', { eager: true, as: 'raw' });
   const subsites: { [folder: string]: { name: string, images: string[], pdfs: string[], description: string[] } } = {};
+const htmlFiles = import.meta.glob('../subsites/*/*.html', {
+  eager: true,
+  as: 'raw',
+});
 
-  // Images
   for (const path in galleries) {
     const match = path.match(/\/subsites\/([^/]+)\/([^/]+\.(jpg|png|jpeg|gif|webp))$/);
     if (match) {
@@ -14,7 +17,6 @@ export function loadSubsites() {
     }
   }
 
-  // PDFs
   for (const path in pdfFiles) {
     const match = path.match(/\/subsites\/([^/]+)\/([^/]+\.pdf)$/);
     if (match) {
@@ -24,15 +26,14 @@ export function loadSubsites() {
     }
   }
 
-  // Descriptions
-  for (const path in textFile) {
-    const match = path.match(/\/subsites\/([^/]+)\/([^/]+\.txt)$/);
-    if (match) {
-      const [ , folder ] = match;
-      if (!subsites[folder]) subsites[folder] = { name: folder, images: [], pdfs: [], description: [] };
-      subsites[folder].description.push((textFile as any)[path]);
-    }
-  }
 
+for (const path in htmlFiles) {
+  const match = path.match(/\/subsites\/([^/]+)\/([^/]+\.html)$/);
+  if (match) {
+    const [, folder] = match;
+    if (!subsites[folder]) subsites[folder] = { name: folder, images: [], pdfs: [], description: [] };
+    subsites[folder].description.push((htmlFiles as any)[path]);
+  }
+}
   return Object.values(subsites);
 }
